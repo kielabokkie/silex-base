@@ -2,7 +2,11 @@
 
 ## Installation
 
-First you need to download Composer:
+First you'll need to download the latest silex.phar file from the Silex website:
+
+    wget silex.sensiolabs.org/get/silex.phar -O vendor/silex.phar
+
+Next you have to download and install Composer:
  
     curl -s http://getcomposer.org/installer | php
 
