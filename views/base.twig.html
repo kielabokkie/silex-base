@@ -1,0 +1,35 @@
+<!doctype html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Silex-Base {% block title %}{% endblock %}</title>
+
+        <meta name="description" content="Silex-Base">
+        <meta name="author" content="Wouter Peschier">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        {% block head %}
+        {% endblock %}
+    
+    </head>
+
+    <body>
+
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <footer>
+            {% block footer %}
+            {% endblock %}
+        </footer>
+      
+        <script src="js/scripts.js"></script>
+
+    </body>
+
+</html>

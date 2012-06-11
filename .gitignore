@@ -1,0 +1,5 @@
+/vendor/
+/nbproject
+silex.phar
+composer.phar
+composer.lock
