@@ -3,3 +3,7 @@
 silex.phar
 composer.phar
 composer.lock
+
+# OS X Junk
+.DS_Store
+._*
