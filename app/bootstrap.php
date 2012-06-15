@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__.'/../vendor/silex.phar';
+require_once __DIR__.'/../vendor/autoload.php';
 
 $config = require_once __DIR__.'/../config/config.php';
 
@@ -11,7 +12,6 @@ $app["debug"] = $config['app.debug'];
 # Register Twig
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path'       => __DIR__.'/../views',
-    'twig.class_path' => __DIR__.'/../vendor/twig/twig/lib',
 ));
 
 # Register Swiftmailer

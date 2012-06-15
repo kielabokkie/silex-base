@@ -1,6 +1,6 @@
 {
     "require": {
-        "twig/twig": "1.6.0",
+        "twig/twig": ">=1.8,<2.0-dev",
         "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev"
     }
 }
