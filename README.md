@@ -14,7 +14,7 @@ This Silex-Base will install the Twig and Swiftmailer libraries. These dependenc
 
     {
         "require": {
-            "twig/twig": "1.6.0",
+            "twig/twig": ">=1.8,<2.0-dev",
             "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev"
         }
     }
@@ -23,17 +23,23 @@ Change this file to your needs by adding or removing libraries. After that you h
 
     php composer.phar install
 
-### Environments
+## Configuration
 
-Open the environments.ini file and change the URL's to the ones you want to user for your project:
+In the config directory there are two important files that you should edit to your needs.
+
+### environments.ini
+
+The environments file is used to make it possible to have environment specific configuration parameters. You can specify an URL and the environment (for example: dev, staging and prod) that should be used.
+
+Open the environments.ini file and change the URL's to the ones you want to use for your project:
 
     yoursite.local       = dev
     staging.yoursite.com = staging
     yoursite.com         = prod
     
-The dev, staging and prod environments are used for creating environment specific configurations.
+You can add your own custom environments in this file. If you do then don't forget to also add a new section to the config.ini file that is described below.
 
-### Configuration
+### config.ini
 
 When you open the config.ini file you will see that the different environments have their own sections. At the bottom of the file there is an 'all' section. Environment specific configuration will overwrite this 'all' configuration.
 
