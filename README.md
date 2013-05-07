@@ -2,18 +2,19 @@
 
 ## Installation
 
-First you'll need to download the latest silex.phar file from the Silex website:
+First you'll need to clone this project:
 
-    wget silex.sensiolabs.org/get/silex.phar -O vendor/silex.phar
+    git clone git@github.com:kielabokkie/silex-base.git yourproject
 
 Next you have to download and install Composer:
- 
+
     curl -s http://getcomposer.org/installer | php
 
-This Silex-Base will install the Twig and Swiftmailer libraries. These dependencies are defined in the composer.json file:
+Composer is configured to install Silex, Twig and Swiftmailer. These dependencies are defined in the composer.json file:
 
     {
         "require": {
+            "silex/silex": "~1.0",
             "twig/twig": ">=1.8,<2.0-dev",
             "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev"
         }
@@ -36,7 +37,7 @@ Open the environments.ini file and change the URL's to the ones you want to use 
     yoursite.local       = dev
     staging.yoursite.com = staging
     yoursite.com         = prod
-    
+
 You can add your own custom environments in this file. If you do then don't forget to also add a new section to the config.ini file that is described below.
 
 ### config.ini
